@@ -20,6 +20,9 @@ class User {
     @Column() // Declarando o coluno e o tipo de dado
     password: string;
 
+    @Column()
+    avatar: string;
+
     @CreateDateColumn()
     created_at: Date;
 
