@@ -8,7 +8,7 @@ import {
     JoinColumn,
 } from 'typeorm';
 
-import User from './Users';
+import User from '@modules/users/infra/typeorm/entities/Users';
 
 @Entity('appointments') // Declarando qual tabela a informação deve ser salva
 class Appointment {

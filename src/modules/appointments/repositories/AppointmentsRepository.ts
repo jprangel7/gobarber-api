@@ -1,6 +1,6 @@
 import { EntityRepository, Repository } from 'typeorm';
 
-import Appointment from '../models/Appointments';
+import Appointment from '../infra/typeorm/entities/Appointments';
 
 // Declarando o repositório, passando como parâmetro o Model
 @EntityRepository(Appointment)
