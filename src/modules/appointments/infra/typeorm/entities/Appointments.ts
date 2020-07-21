@@ -22,6 +22,13 @@ class Appointment {
     @JoinColumn({ name: 'provider_id' }) // Declarando qual coluna se relaciona com a outra tabela
     provider: User;
 
+    @Column() // Declarando a coluna e o tipo de dado => () = 'varchar'
+    user_id: string;
+
+    @ManyToOne(() => User) // Declarando o relacionamento entre tabelas
+    @JoinColumn({ name: 'user_id' }) // Declarando qual coluna se relaciona com a outra tabela
+    user: User;
+
     @Column('time with time zone') // Declarando a coluna e o tipo de dado
     date: Date;
 
